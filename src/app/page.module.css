@@ -1,0 +1,6 @@
+.postsContainer {
+    /* width: 90%; */
+    display: flex;
+    flex-wrap: wrap;
+    gap:32px;
+}

@@ -1,0 +1,45 @@
+.post {
+    max-width: 486px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header {
+    padding: 24px;
+    background-color: #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img {
+    border-radius: 8px;
+}
+
+.secao {
+    background-color: #171D1F;
+    padding: 16px;
+}
+
+.titulo {
+    color: #BCBCBC;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+}
+
+.paragrafo {
+    color: #BCBCBC;
+    font-size: 15px;
+    line-height: 22.5px;
+    font-weight: 400;
+}
+
+.rodape {
+    background-color: #171D1F;
+    padding: 16px;
+
+    display: flex;
+    justify-content: flex-end;
+}
