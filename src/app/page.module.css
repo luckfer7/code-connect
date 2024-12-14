@@ -4,3 +4,11 @@
     flex-wrap: wrap;
     gap:32px;
 }
+
+.navegacao {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #BFFFC3;
+    
+}

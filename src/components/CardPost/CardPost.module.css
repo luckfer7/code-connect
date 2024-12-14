@@ -1,3 +1,8 @@
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .post {
     max-width: 486px;
     border-radius: 8px;

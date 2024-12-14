@@ -31,13 +31,14 @@ async function getAllPosts(page) {
 
 //segundo, precisamos conectar o componente a esses dados. no next a gente obtain esses dados no lado do servidor, monta a tela,e joga no navegador. Só precisamos declarar a função como assíncrona.
 
-export default async function Home() {
-  const {data: posts, prev, next} = await getAllPosts(1) //passando a página 1
+export default async function Home({ searchParams }) {
+  const currentPage = searchParams?.page || 1; //senão tiver pagina, é a pagina um.
+  const {data: posts, prev, next} = await getAllPosts(currentPage) //passando a página 1
   return (
     <main className={Styles.postsContainer}>
       {posts.map(post => <CardPost key={post.id} post={post} />)}
       {prev && <Link href={`/?page=${prev}`}>Página anterior</Link>}
-      {next && <Link href={`/?page=${next}`}> Próxima página</Link>}
+      {next && <Link className={Styles.navegacao} href={`/?page=${next}`}> Próxima página</Link>}
     </main>
   );
 }
