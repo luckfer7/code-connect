@@ -1,4 +1,3 @@
-"use cliente"
 
 //import logger from "@/logger";
 import { Html } from "next/document";
