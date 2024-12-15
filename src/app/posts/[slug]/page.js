@@ -1,4 +1,6 @@
-import logger from "@/logger";
+"use cliente"
+
+//import logger from "@/logger";
 import { Html } from "next/document";
 import { remark } from "remark";
 
@@ -7,10 +9,10 @@ async function getPostBySlug(slug) {
     //vai filtrar o post clicado por slug.
     const response = await fetch(url);
     if(!response.ok){
-        logger.error("Algo deu errado!");
+        //logger.error("Algo deu errado!");
         return {};
     }
-    logger.info("Logger obtido com sucesso");
+    //logger.info("Logger obtido com sucesso");
     const data = await response.json()
     if (data.length === 0) {
         return {};
